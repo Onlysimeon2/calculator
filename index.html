@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iPhone Calculator</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="result" disabled>
+    <div class="row">
+      <button id="myButton3"onclick="clearResult()">AC</button>
+      <button id="myButton3" onclick="negate()">+/-</button>
+      <button id="myButton3" onclick="percentage()">%</button>
+      <button id="myButton2"onclick="operate('/')">÷</button>
+    </div>
+    <div class="row">
+      <button onclick="appendNumber(7)">7</button>
+      <button onclick="appendNumber(8)">8</button>
+      <button onclick="appendNumber(9)">9</button>
+      <button id="myButton2"onclick="operate('*')">x</button>
+    </div>
+    <div class="row">
+      <button onclick="appendNumber(4)">4</button>
+      <button onclick="appendNumber(5)">5</button>
+      <button onclick="appendNumber(6)">6</button>
+      <button id="myButton2"onclick="operate('-')">-</button>
+    </div>
+    <div class="row">
+      <button onclick="appendNumber(1)">1</button>
+      <button onclick="appendNumber(2)">2</button>
+      <button onclick="appendNumber(3)">3</button>
+      <button id="myButton2" onclick="operate('+')">+</button>
+    </div>
+    <div class="row">
+      <button id="myButton1"onclick="appendNumber(0)">0</button>
+      <button onclick="appendNumber('.')">.</button>
+      <button id="myButton2" onclick="calculate()">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
